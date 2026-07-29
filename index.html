@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agenda Minecraft</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <h1>⛏️</h1>
+
+        <h2>Agenda Minecraft</h2>
+
+        <nav>
+
+            <a href="#">🏠 Dashboard</a>
+            <a href="pages/horario.html">📚 Horário</a>
+            <a href="pages/calendario.html">📅 Calendário</a>
+            <a href="pages/tarefas.html">📝 Tarefas</a>
+            <a href="pages/inventario.html">🎒 Inventário</a>
+            <a href="pages/estatisticas.html">📈 Estatísticas</a>
+            <a href="pages/configuracoes.html">⚙ Configurações</a>
+
+        </nav>
+
+    </aside>
+
+    <main>
+
+        <header>
+
+            <h1>Dashboard</h1>
+
+            <p id="relogio">00:00:00</p>
+
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>📚 Aula Atual</h3>
+                <p>Carregando...</p>
+            </div>
+
+            <div class="card">
+                <h3>⏳ Próxima Aula</h3>
+                <p>Carregando...</p>
+            </div>
+
+            <div class="card">
+                <h3>⭐ XP</h3>
+
+                <progress value="20" max="100"></progress>
+
+                <p>20 / 100 XP</p>
+            </div>
+
+            <div class="card">
+                <h3>🎯 Missões</h3>
+
+                <ul>
+                    <li>✔ Estudar Matemática</li>
+                    <li>✔ Revisar Banco de Dados</li>
+                    <li>✔ Fazer exercício de POO</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/relogio.js"></script>
+<script src="js/app.js"></script>
+
 </body>
 </html>
